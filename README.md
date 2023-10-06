@@ -10,7 +10,7 @@ What is the performance overhead added by Refit?
 
 ## Answer
 
-`Refit` is adding an overhead of under half of millisecond.
+`Refit` is adding an overhead of around half a millisecond.
 
 ## Implementation
 

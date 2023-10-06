@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>DustInTheWind.AspNetCorePills.RefitPerformance.Benchmark.WebApiBenchmark-20231006-192225</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet v0.13.9+228a464e8be6c580ad9408e98f18813f6407fb5a, Windows 11 (10.0.22621.2283/22H2/2022Update/SunValley2)
+Intel Core i7-8565U CPU 1.80GHz (Whiskey Lake), 1 CPU, 8 logical and 4 physical cores
+.NET SDK 7.0.400
+  [Host]     : .NET 6.0.22 (6.0.2223.42425), X64 RyuJIT AVX2
+  Job-FHBYDI : .NET 6.0.22 (6.0.2223.42425), X64 RyuJIT AVX2
+</code></pre>
+<pre><code>IterationCount=200  LaunchCount=3  
+</code></pre>
+
+<table>
+<thead><tr><th>Method                </th><th>Mean</th><th>Error</th><th>StdDev</th><th>Median</th>
+</tr>
+</thead><tbody><tr><td>NormalEndpoint_HttpClient</td><td>5.720 ms</td><td>0.0358 ms</td><td>0.2591 ms</td><td>5.641 ms</td>
+</tr><tr><td>NormalEndpoint_Refit</td><td>6.160 ms</td><td>0.0366 ms</td><td>0.2639 ms</td><td>6.075 ms</td>
+</tr><tr><td>MultipartEndpoint_HttpClient</td><td>5.757 ms</td><td>0.0355 ms</td><td>0.2547 ms</td><td>5.674 ms</td>
+</tr><tr><td>MultipartEndpoint_Refit</td><td>6.293 ms</td><td>0.0403 ms</td><td>0.2877 ms</td><td>6.197 ms</td>
+</tr></tbody></table>
+</body>
+</html>

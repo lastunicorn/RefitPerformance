@@ -20,6 +20,7 @@ using DustInTheWind.AspNetCorePills.RefitPerformance.Client.WebApiAccess;
 
 namespace DustInTheWind.AspNetCorePills.RefitPerformance.Benchmark;
 
+[SimpleJob(launchCount: 3, iterationCount: 200)]
 public class WebApiBenchmark
 {
     private readonly DummyWebApiClient dummyWebApiClient;
