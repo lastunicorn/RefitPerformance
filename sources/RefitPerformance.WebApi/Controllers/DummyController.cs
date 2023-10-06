@@ -38,7 +38,7 @@ public class DummyController : ControllerBase
 
     [HttpPost("{id}/test2")]
     [Produces("application/json")]
-    public async Task<IActionResult> DoSomething(string id, [FromForm][Required] DummyRequestModel dummyRequestModel)
+    public async Task<IActionResult> DoSomething(string id, [FromForm] DummyRequestModel dummyRequestModel)
     {
         if (dummyRequestModel.Binary != null)
         {
@@ -51,7 +51,7 @@ public class DummyController : ControllerBase
         {
             Message = "All was ok"
         };
-
+        
         return Ok(responseViewModel);
     }
 }
