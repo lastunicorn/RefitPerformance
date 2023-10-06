@@ -21,8 +21,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <PropertyGroup>
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
-        <AssemblyName>DustInTheWind.AspNetCorePills.RefitPerformance.WebApiAccess</AssemblyName>
-        <RootNamespace>DustInTheWind.AspNetCorePills.RefitPerformance.WebApiAccess</RootNamespace>
+        <AssemblyName>DustInTheWind.AspNetCorePills.RefitPerformance.Client.WebApiAccess</AssemblyName>
+        <RootNamespace>DustInTheWind.AspNetCorePills.RefitPerformance.Client.WebApiAccess</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>

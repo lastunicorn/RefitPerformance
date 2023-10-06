@@ -22,12 +22,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <OutputType>Exe</OutputType>
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
-        <AssemblyName>DustInTheWind.AspNetCorePills.RefitPerformance.Client</AssemblyName>
-        <RootNamespace>DustInTheWind.AspNetCorePills.RefitPerformance.Client</RootNamespace>
+        <AssemblyName>DustInTheWind.AspNetCorePills.RefitPerformance.Client.Cli</AssemblyName>
+        <RootNamespace>DustInTheWind.AspNetCorePills.RefitPerformance.Client.Cli</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\RefitPerformance.WebApiAccess\RefitPerformance.WebApiAccess.csproj" PrivateAssets="All" />
+      <ProjectReference Include="..\RefitPerformance.Client.WebApiAccess\RefitPerformance.Client.WebApiAccess.csproj" PrivateAssets="All" />
     </ItemGroup>
 
     <ItemGroup>

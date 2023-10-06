@@ -7,9 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RefitPerformance.Benchmark"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RefitPerformance.WebApi", "RefitPerformance.WebApi\RefitPerformance.WebApi.csproj", "{7E25D9EB-677A-4697-9215-C453ECE9C39D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RefitPerformance.ConsoleClient", "RefitPerformance.Client\RefitPerformance.ConsoleClient.csproj", "{AADA1A11-86AD-4CAF-836C-DBB70F13B071}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RefitPerformance.Client.Cli", "RefitPerformance.Client.Cli\RefitPerformance.Client.Cli.csproj", "{AADA1A11-86AD-4CAF-836C-DBB70F13B071}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefitPerformance.WebApiAccess", "RefitPerformance.WebApiAccess\RefitPerformance.WebApiAccess.csproj", "{48DD1ABE-D831-4B6E-B1C1-89AB777FFF7B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefitPerformance.Client.WebApiAccess", "RefitPerformance.Client.WebApiAccess\RefitPerformance.Client.WebApiAccess.csproj", "{48DD1ABE-D831-4B6E-B1C1-89AB777FFF7B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{AD7ADAD3-47A4-42FB-B3F5-158A40F6D6C4}"
 EndProject
