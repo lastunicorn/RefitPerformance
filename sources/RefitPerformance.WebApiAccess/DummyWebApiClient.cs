@@ -72,7 +72,7 @@ public class DummyWebApiClient
             Binary = new FormFile(stream, 0, stream.Length, string.Empty, "blob.bin"),
             AuditEntry = DummyRequestData.CreateDummyAudit()
         };
-        
+
         const string id = "123";
         const string uri = $"/Dummy/{id}/test2";
 

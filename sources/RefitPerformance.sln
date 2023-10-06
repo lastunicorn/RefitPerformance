@@ -3,11 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34009.444
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefitPerformance.Benchmark", "RefitPerformance.Benchmark\RefitPerformance.Benchmark.csproj", "{5DB34417-D129-41A4-9051-F633561B2B28}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RefitPerformance.Benchmark", "RefitPerformance.Benchmark\RefitPerformance.Benchmark.csproj", "{5DB34417-D129-41A4-9051-F633561B2B28}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefitPerformance.WebApi", "RefitPerformance.WebApi\RefitPerformance.WebApi.csproj", "{7E25D9EB-677A-4697-9215-C453ECE9C39D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RefitPerformance.WebApi", "RefitPerformance.WebApi\RefitPerformance.WebApi.csproj", "{7E25D9EB-677A-4697-9215-C453ECE9C39D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefitPerformance.Client", "RefitPerformance.Client\RefitPerformance.Client.csproj", "{AADA1A11-86AD-4CAF-836C-DBB70F13B071}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RefitPerformance.ConsoleClient", "RefitPerformance.Client\RefitPerformance.ConsoleClient.csproj", "{AADA1A11-86AD-4CAF-836C-DBB70F13B071}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefitPerformance.WebApiAccess", "RefitPerformance.WebApiAccess\RefitPerformance.WebApiAccess.csproj", "{48DD1ABE-D831-4B6E-B1C1-89AB777FFF7B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{AD7ADAD3-47A4-42FB-B3F5-158A40F6D6C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{76A7432D-8180-4BFB-BAFF-7CC9B6944133}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,9 +33,19 @@ Global
 		{AADA1A11-86AD-4CAF-836C-DBB70F13B071}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AADA1A11-86AD-4CAF-836C-DBB70F13B071}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AADA1A11-86AD-4CAF-836C-DBB70F13B071}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48DD1ABE-D831-4B6E-B1C1-89AB777FFF7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48DD1ABE-D831-4B6E-B1C1-89AB777FFF7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48DD1ABE-D831-4B6E-B1C1-89AB777FFF7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48DD1ABE-D831-4B6E-B1C1-89AB777FFF7B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5DB34417-D129-41A4-9051-F633561B2B28} = {76A7432D-8180-4BFB-BAFF-7CC9B6944133}
+		{7E25D9EB-677A-4697-9215-C453ECE9C39D} = {AD7ADAD3-47A4-42FB-B3F5-158A40F6D6C4}
+		{AADA1A11-86AD-4CAF-836C-DBB70F13B071} = {76A7432D-8180-4BFB-BAFF-7CC9B6944133}
+		{48DD1ABE-D831-4B6E-B1C1-89AB777FFF7B} = {76A7432D-8180-4BFB-BAFF-7CC9B6944133}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D7EE48BA-6997-4EFE-8644-087801CEF720}

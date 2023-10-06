@@ -14,15 +14,21 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using BenchmarkDotNet.Reports;
-using BenchmarkDotNet.Running;
+using Microsoft.Extensions.Configuration;
 
-namespace DustInTheWind.AspNetCorePills.RefitPerformance.Benchmark;
+namespace DustInTheWind.AspNetCorePills.RefitPerformance.Client;
 
-internal class Program
+internal class Config
 {
-    private static void Main(string[] args)
+    private readonly IConfigurationRoot config;
+
+    public string WebServiceUrl => config["WebServiceUrl"];
+
+    public Config()
     {
-        Summary summary = BenchmarkRunner.Run<WebApiBenchmark>();
+        config = new ConfigurationBuilder()
+            .AddJsonFile("appsettings.json")
+            .Build();
     }
+
 }

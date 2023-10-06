@@ -1,4 +1,4 @@
-﻿<!--
+<!--
 ASP.NET Core Pills
 Copyright (C) 2022-2023 Dust in the Wind
 
@@ -19,26 +19,19 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <OutputType>Exe</OutputType>
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
-        <AssemblyName>RefitPerformance.Benchmark</AssemblyName>
-        <RootNamespace>DustInTheWind.AspNetCorePills.RefitPerformance.Benchmark</RootNamespace>
+        <AssemblyName>DustInTheWind.AspNetCorePills.RefitPerformance.WebApiAccess</AssemblyName>
+        <RootNamespace>DustInTheWind.AspNetCorePills.RefitPerformance.WebApiAccess</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="BenchmarkDotNet" Version="0.13.9" />
-        <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0-rc.1.23419.4" />
+        <FrameworkReference Include="Microsoft.AspNetCore.App" />
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\RefitPerformance.WebApiAccess\RefitPerformance.WebApiAccess.csproj" PrivateAssets="All" />
-    </ItemGroup>
-
-    <ItemGroup>
-        <None Update="appsettings.json">
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </None>
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+        <PackageReference Include="Refit" Version="7.0.0" />
     </ItemGroup>
 
 </Project>

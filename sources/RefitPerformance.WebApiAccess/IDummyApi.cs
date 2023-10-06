@@ -23,15 +23,7 @@ public interface IDummyApi
 {
     [Post("/Dummy/{Id}/test1")]
     Task<HttpResponseMessage> Test1(string id, AuditEntryRequestDto auditEntry);
-
-    //[Multipart]
-    //[Post("/Dummy/{Id}/test2")]
-    //Task<HttpResponseMessage> Test2(
-    //    string id,
-    //    [AliasAs("Binary")] StreamPart binary,
-    //    [AliasAs("AuditEntry.Message")] string message = null,
-    //    [AliasAs("AuditEntry.Details")] IEnumerable<DetailsRequestDto> details = null);
-
+    
     [Multipart]
     [Post("/Dummy/{Id}/test2")]
     Task<HttpResponseMessage> Test2(

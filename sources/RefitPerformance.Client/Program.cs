@@ -14,15 +14,18 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using BenchmarkDotNet.Reports;
-using BenchmarkDotNet.Running;
-
-namespace DustInTheWind.AspNetCorePills.RefitPerformance.Benchmark;
+namespace DustInTheWind.AspNetCorePills.RefitPerformance.Client;
 
 internal class Program
 {
-    private static void Main(string[] args)
+    private static async Task Main(string[] args)
     {
-        Summary summary = BenchmarkRunner.Run<WebApiBenchmark>();
+        Config config = new();
+        DummyWebApiClient dummyWebApiClient = new(config.WebServiceUrl);
+
+        //await dummyWebApiClient.NormalEndpoint_HttpClient();
+        //await dummyWebApiClient.NormalEndpoint_Refit();
+        await dummyWebApiClient.MultipartEndpoint_HttpClient();
+        //await dummyWebApiClient.MultipartEndpoint_Refit();
     }
 }
