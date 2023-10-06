@@ -19,6 +19,6 @@ namespace DustInTheWind.AspNetCorePills.RefitPerformance.WebApi.Models;
 public class DummyRequestModel
 {
     public IFormFile Binary { get; set; }
-    
+
     public AuditEntryRequestModel AuditEntry { get; set; }
 }

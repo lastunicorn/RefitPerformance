@@ -14,7 +14,6 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using System.ComponentModel.DataAnnotations;
 using DustInTheWind.AspNetCorePills.RefitPerformance.WebApi.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -51,7 +50,7 @@ public class DummyController : ControllerBase
         {
             Message = "All was ok"
         };
-        
+
         return Ok(responseViewModel);
     }
 }

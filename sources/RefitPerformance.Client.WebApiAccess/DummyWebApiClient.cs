@@ -16,13 +16,13 @@
 
 using System.Globalization;
 using System.Text;
-using DustInTheWind.AspNetCorePills.RefitPerformance.Client.Models;
-using DustInTheWind.AspNetCorePills.RefitPerformance.Client.Utils;
+using DustInTheWind.AspNetCorePills.RefitPerformance.Client.WebApiAccess.Models;
+using DustInTheWind.AspNetCorePills.RefitPerformance.Client.WebApiAccess.Utils;
 using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
 using Refit;
 
-namespace DustInTheWind.AspNetCorePills.RefitPerformance.Client;
+namespace DustInTheWind.AspNetCorePills.RefitPerformance.Client.WebApiAccess;
 
 public class DummyWebApiClient
 {

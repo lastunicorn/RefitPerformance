@@ -16,7 +16,7 @@
 
 using Microsoft.AspNetCore.Http;
 
-namespace DustInTheWind.AspNetCorePills.RefitPerformance.Client.Models;
+namespace DustInTheWind.AspNetCorePills.RefitPerformance.Client.WebApiAccess.Models;
 
 public class DummyRequestDto
 {

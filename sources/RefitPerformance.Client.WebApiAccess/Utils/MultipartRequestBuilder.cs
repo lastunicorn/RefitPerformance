@@ -20,7 +20,7 @@ using System.Text;
 using System.Text.Json;
 using Microsoft.AspNetCore.Http;
 
-namespace DustInTheWind.AspNetCorePills.RefitPerformance.Client.Utils;
+namespace DustInTheWind.AspNetCorePills.RefitPerformance.Client.WebApiAccess.Utils;
 
 internal class MultipartRequestBuilder<TModel>
 {

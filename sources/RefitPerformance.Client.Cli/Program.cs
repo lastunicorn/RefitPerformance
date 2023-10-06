@@ -14,7 +14,9 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-namespace DustInTheWind.AspNetCorePills.RefitPerformance.Client;
+using DustInTheWind.AspNetCorePills.RefitPerformance.Client.WebApiAccess;
+
+namespace DustInTheWind.AspNetCorePills.RefitPerformance.Client.Cli;
 
 internal class Program
 {
@@ -23,9 +25,9 @@ internal class Program
         Config config = new();
         DummyWebApiClient dummyWebApiClient = new(config.WebServiceUrl);
 
-        //await dummyWebApiClient.NormalEndpoint_HttpClient();
-        //await dummyWebApiClient.NormalEndpoint_Refit();
+        await dummyWebApiClient.NormalEndpoint_HttpClient();
+        await dummyWebApiClient.NormalEndpoint_Refit();
         await dummyWebApiClient.MultipartEndpoint_HttpClient();
-        //await dummyWebApiClient.MultipartEndpoint_Refit();
+        await dummyWebApiClient.MultipartEndpoint_Refit();
     }
 }

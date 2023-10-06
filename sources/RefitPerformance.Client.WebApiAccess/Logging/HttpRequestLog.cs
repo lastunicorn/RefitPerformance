@@ -16,7 +16,7 @@
 
 using System.Diagnostics;
 
-namespace DustInTheWind.AspNetCorePills.RefitPerformance.Client.Logging;
+namespace DustInTheWind.AspNetCorePills.RefitPerformance.Client.WebApiAccess.Logging;
 
 internal class HttpRequestLog
 {

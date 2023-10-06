@@ -16,7 +16,7 @@
 
 using System.Text.Json.Serialization;
 
-namespace DustInTheWind.AspNetCorePills.RefitPerformance.Client.Models;
+namespace DustInTheWind.AspNetCorePills.RefitPerformance.Client.WebApiAccess.Models;
 
 public class DetailsRequestDto
 {

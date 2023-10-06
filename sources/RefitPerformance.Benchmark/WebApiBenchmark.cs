@@ -16,44 +16,41 @@
 
 using BenchmarkDotNet.Attributes;
 using DustInTheWind.AspNetCorePills.RefitPerformance.Client;
+using DustInTheWind.AspNetCorePills.RefitPerformance.Client.WebApiAccess;
 
 namespace DustInTheWind.AspNetCorePills.RefitPerformance.Benchmark;
 
 public class WebApiBenchmark
 {
-    private readonly string baseUrl;
+    private readonly DummyWebApiClient dummyWebApiClient;
 
     public WebApiBenchmark()
     {
         Config config = new();
-        baseUrl = config.WebServiceUrl;
+        dummyWebApiClient = new DummyWebApiClient(config.WebServiceUrl);
     }
 
     [Benchmark]
     public async Task NormalEndpoint_HttpClient()
     {
-        DummyWebApiClient dummyWebApiClient = new(baseUrl);
         await dummyWebApiClient.NormalEndpoint_HttpClient();
     }
 
     [Benchmark]
     public async Task NormalEndpoint_Refit()
     {
-        DummyWebApiClient dummyWebApiClient = new(baseUrl);
         await dummyWebApiClient.NormalEndpoint_Refit();
     }
 
     [Benchmark]
     public async Task MultipartEndpoint_HttpClient()
     {
-        DummyWebApiClient dummyWebApiClient = new(baseUrl);
         await dummyWebApiClient.MultipartEndpoint_HttpClient();
     }
 
     [Benchmark]
     public async Task MultipartEndpoint_Refit()
     {
-        DummyWebApiClient dummyWebApiClient = new(baseUrl);
         await dummyWebApiClient.MultipartEndpoint_Refit();
     }
 }

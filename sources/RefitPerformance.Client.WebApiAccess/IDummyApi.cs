@@ -14,10 +14,10 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-using DustInTheWind.AspNetCorePills.RefitPerformance.Client.Models;
+using DustInTheWind.AspNetCorePills.RefitPerformance.Client.WebApiAccess.Models;
 using Refit;
 
-namespace DustInTheWind.AspNetCorePills.RefitPerformance.Client;
+namespace DustInTheWind.AspNetCorePills.RefitPerformance.Client.WebApiAccess;
 
 public interface IDummyApi
 {

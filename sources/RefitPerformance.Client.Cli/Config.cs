@@ -16,7 +16,7 @@
 
 using Microsoft.Extensions.Configuration;
 
-namespace DustInTheWind.AspNetCorePills.RefitPerformance.Client;
+namespace DustInTheWind.AspNetCorePills.RefitPerformance.Client.Cli;
 
 internal class Config
 {

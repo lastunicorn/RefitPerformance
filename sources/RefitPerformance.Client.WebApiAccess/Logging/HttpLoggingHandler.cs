@@ -17,7 +17,7 @@
 using System.Diagnostics;
 using System.Net.Http.Headers;
 
-namespace DustInTheWind.AspNetCorePills.RefitPerformance.Client.Logging;
+namespace DustInTheWind.AspNetCorePills.RefitPerformance.Client.WebApiAccess.Logging;
 
 public class HttpLoggingHandler : DelegatingHandler
 {
